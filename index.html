@@ -1,1 +1,209 @@
-"Hello World"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artoo</title>
+    <style>
+        body {
+            background-color: #1E1E1E;
+            color: white;
+            font-family: 'Public Sans', sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .sidebar {
+            width: 130px;
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .logo {
+            margin-bottom: 100px;
+        }
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-content {
+            padding: 50px;
+            width: calc(100% - 130px);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand {
+            font-family: 'Poppins', sans-serif;
+            font-size: 42px;
+        }
+        nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        nav a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+        }
+        nav a.active {
+            color: white;
+        }
+        .start-work-btn {
+            background-color: rgba(255, 255, 255, 0.12);
+            padding: 25px 32px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+        }
+        .hero-text {
+            max-width: 345px;
+        }
+        .hero-text h1 {
+            font-size: 42px;
+            font-weight: 600;
+            margin: 20px 0;
+        }
+        .hero-text p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.75);
+        }
+        .explore-btn {
+            background-color: rgba(0, 0, 0, 0.12);
+            padding: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Public Sans', sans-serif;
+            font-size: 18px;
+        }
+        .collections {
+            margin-top: 100px;
+        }
+        .collections h2 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .collections p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.45);
+        }
+        .bottom-section {
+            background-color: rgba(0, 0, 0, 0.12);
+            backdrop-filter: blur(12px);
+            position: absolute;
+            bottom: 0;
+            width: calc(100% - 130px);
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .news-item {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .news-item img {
+            width: 222px;
+            height: 222px;
+        }
+        .news-text h3 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        .news-text p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=DM+Sans:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <!-- Hamburger Icon -->
+            </div>
+            <div class="social-links">
+                <span>Fb</span>
+                <span>In</span>
+                <span>Tw</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <div class="brand">Artoo.</div>
+                <nav>
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <img src="search-icon.svg" alt="Search">
+                </nav>
+                <a href="#" class="start-work-btn">Start work</a>
+            </header>
+            <div class="hero">
+                <div class="collections">
+                    <p>/01</p>
+                    <h2>Work Collection</h2>
+                    <p>Active Collection</p>
+                    <p>Travel Collection</p>
+                </div>
+                <div class="hero-text">
+                    <a href="#" class="explore-btn">
+                        <img src="play-icon.svg" alt="Play">
+                        Explore 3D Art Creations
+                    </a>
+                    <h1>Shape the Future with Artoo</h1>
+                    <p>Dive into a collection of stunning 3D models and designs crafted with Artoo software, tailored for the modern digital artist.</p>
+                    <a href="#" class="start-work-btn">Start work</a>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="events">
+                    <h3>Events</h3>
+                    <p>SF - 3D Art Workshop, Aug 12, 5-7 PM</p>
+                    <p>Created by @darshan Ui Ux Designer</p>
+                    <p>Live VR Session - Aug 15, 6-8 PM.</p>
+                    <p>For @Xyz tec company</p>
+                </div>
+                <div class="news-item">
+                    <img src="news-image.png" alt="News">
+                    <div class="news-text">
+                        <h3>News</h3>
+                        <p>Meet Artist of the Month: @Alex Chen</p>
+                        <p>Discover Alex’s stunning 3D worlds created with Artoo. Read More for an exclusive interview.</p>
+                        <a href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
